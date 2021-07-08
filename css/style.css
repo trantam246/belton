@@ -1,0 +1,327 @@
+*{margin:0;padding:0;}
+.menutrai{}
+.bannertop{
+    background-image: url(../img/background.jpg);
+    width:100%;
+    height: 600px;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.bannertop::before{
+    content:" ";
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-image: -webkit-linear-gradient(left,#00000088 0%,#ffffff1c 50%,#0000008a 100%);
+}
+.bannertop .bacot{
+    display:flex;
+    position: absolute;
+    top:0;
+    width:100%;
+}
+.bannertop .bacot .motcot{
+    width:33.33%;
+}
+.bannertop .bacot .motcot.trai a{
+    color: white;
+    padding: 10px 10px;
+    display: inline-block;
+}
+.bannertop .bacot .motcot.phai a:hover{
+   color:blue;
+}
+.bannertop .bacot .motcot.trai a:hover{
+   color:blue;
+}
+.bannertop .bacot .motcot.giua{
+    text-align: center;
+}
+.bannertop .bacot .motcot.giua img{
+    width: 50px;
+    padding-top:10px
+}
+.bannertop .bacot .motcot.phai{
+    text-align: right;
+    padding: 15px 20px;
+}
+.bannertop .bacot .motcot.phai .icon{
+    color: white;
+    font-size: 16px;
+    padding: 0px 10px;
+}
+.textbanner{
+    position: absolute;
+    top:50%;
+    
+    width:100%;
+}
+.textbanner .content{
+    width:1170px;
+    margin:auto;
+    color:white;
+}
+.textbanner .big{
+    width:50%;
+    padding-top:20px;
+}
+.content2{
+    display: flex;
+    padding-top:40px;
+    width:1170px;
+    margin:auto;
+    font-size: 20px;
+    height: 400px;
+}
+.content2 p{
+    color:rgba(128, 128, 128, 0.842);
+}
+.content2 .left{
+    width:30%;
+}
+.content2 pre{
+    padding-top:10px;
+    font-family: segoe ui;
+    font-weight: bolder;
+}
+.content2 .right{
+    width:45%;
+}
+.content2 p{
+    padding-top:15px;
+    line-height: 30px;
+}
+.muiten{
+    width:200px;
+    height: 10px;
+    color:black;
+    display:flex;
+    position: relative;
+    opacity: 0.7;
+
+}
+.muiten .ten{
+    position: absolute;
+    left:0px;
+    padding-top:20px;
+    transition: 0.3s;
+    color:gray;
+
+}
+.muiten .chu p{
+ 
+   padding-left:45px;
+}
+.muiten:hover .ten{
+    left:20px;
+    opacity: 1;
+    color:black;
+}
+.muiten:hover p{
+    
+    opacity: 1;
+    color:black;
+}
+/* end css top */
+.black{
+    
+    background:black;
+    width:100%;
+    height: 1400px;
+   
+}
+.black .menu{
+text-align: center;
+width:1500px;
+margin:auto;
+}
+.black .menu ul{
+    display: inline;
+}
+.black .menu ul li{
+    display: inline-block;
+    padding:50px 20px;
+}
+.black .menu ul li a{
+    color:rgba(255, 255, 255, 0.349);
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.black .menu ul li a:hover{
+    color:white;
+}
+.categories{
+    width:1350px;
+    height: 1300px;
+    margin:auto;
+    display: flex;
+    flex-wrap:wrap;
+    
+}
+.categories .cate__child{
+    width:600px;
+    margin:0 30px;
+    position: relative;
+}
+.categories .cate__child .cate__child-img{
+    overflow: hidden;
+}
+.categories .cate__child .cate__child-img .item-img{
+    width:100%;
+    transition: 0.4s;
+    
+    
+}
+.categories .cate__child .cate__child-img .item-img:hover{
+    transform: scale(1.23);
+    filter: brightness(50%);
+
+}
+/* end css images */
+.text {
+    color:white;
+    
+    
+}
+
+.text .small {
+
+}
+.text .small p{
+    position: absolute;
+    top:40px;
+    right: 40px;
+    padding:0 20px;
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s;
+    
+}
+.text .small p::after{
+    background: white;
+    bottom: 0;
+    content:"";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    
+    width: 100%;
+    transition: 1s;
+}
+.categories .cate__child:hover p{
+    opacity: 1;
+}
+.categories .cate__child:hover p:after{
+    left:-100%;
+    
+}
+.text .big{}
+.text .big h1{
+    text-transform: uppercase;
+    position: absolute;
+    top:80px;
+    overflow: hidden;
+    right: 30px;
+    opacity: 0;
+    transition: 1s;
+    padding:0 10px;
+}
+.text .big h1:after{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 100%;
+    content:'';
+    background: white;
+    transition: 1s;
+    width:100%;
+}
+.categories .cate__child:hover h1:after{
+    right: -100%;
+   
+}
+.categories .cate__child:hover h1{
+    opacity: 1; 
+}
+/* end css black */
+.icon-images{
+    width:1400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+}
+.icon-images .image{
+    width:100px;
+    height: 50px;
+    display: inline-block;
+    padding:100px 20px;
+    
+}
+.icon-images .image img{
+    width:100%;filter: contrast(10%);
+    transition: 0.4s;
+    
+}
+.icon-images .image img:hover{
+    filter: contrast(100%);
+}
+/* end css icon-images  */
+hr{
+    width:800px;
+    margin: auto;
+}
+.text-bottom{
+    width:900px;
+    margin:auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding-top:30px;
+}
+.text-bottom .left{}
+.text-bottom .left h3{
+    font-weight: bolder;
+}
+.text-bottom .center{
+    width:30%;
+    
+}
+.text-bottom .center p{
+    color:gray;
+}
+.text-bottom .right .ten{
+    padding-top:0;
+}
+.text-bottom .right p{
+    font-size: 10px;
+    color:gray;
+}
+/* end */
+.black-bottom{
+    width:100%;
+    height: 100px;
+    background: black;
+
+}
+.black-bottom .text{
+    display: flex;
+    color:white;
+   padding-top:50px;
+    
+}
+.black-bottom .text p.left{
+    align-items:center;
+    
+}
+.black-bottom .text p.right{
+    margin-left:auto;
+    margin-right: 20px;
+    
+}
+
+   
